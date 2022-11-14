@@ -1,0 +1,58 @@
+body{
+  margin: 1rem auto;
+  width: 80%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+  background-color: #0082D0;
+}
+
+.legend-txt{
+  color: #0082D0;
+}
+
+.caps{
+  background-color: #fff;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: .3rem;
+}
+
+fieldset{
+  background-color: #fff;
+  padding: .7rem;
+}
+
+td{
+  width: 10%;
+}
+
+.certain-fields{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+button{
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 auto;
+  padding: .8rem 1.8rem;
+  cursor: pointer;
+  background-color: #0082D0;
+}
+
+button:hover{
+  background-color: #fff;
+  color: #0082D0;
+
+  transition: .4s;
+}

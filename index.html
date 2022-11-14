@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Formulário CV</title>
+</head>
+<body>
+   <form action="#">
+
+<!-- DADOS PESSOAIS -->
+
+    <fieldset>
+      <legend class="legend-txt caps">Dados Pessoais</legend>
+      <fieldset>
+        <legend class="legend-txt">Identificação</legend>
+
+        <table>
+          <td>Nome Completo: <input type="text" name="full-name"></td>
+          <td>
+            Nacionalidade: 
+            <select name="nacionality">
+              <option label=" "></option>
+              <option value="brazilian">Brasileira
+              <option value="abroad">Estrangeira
+            </select>
+          </td>
+
+          <td>CPF: <input type="number" name="cpf"></td>
+          <td>Passaporte: <input type="number" name="passport"></td>
+        </table>
+      </fieldset>
+
+      <div style="display: flex;">
+        <fieldset style="width: 80%;">
+          <legend class="legend-txt">Dados de Nascimento</legend>
+
+          <table>
+            <td>
+              País: <select name="country">
+                <option label=" "></option>
+                <option value="brazil">Brasil
+              </select>
+            </td>
+
+            <td>
+              UF: <select name="uf">
+                <option label=" "></option>
+                <option value="AC">AC
+                <option value="PR">PR
+                <option value="RJ">RJ
+              </select>
+            </td>
+
+            <td>Cidade: <input type="text" name="city"></td>
+            <td>Data: <input type="date" name="date"></td>
+          </table>
+        </fieldset>
+
+        <fieldset style="width: 20%;">
+          <legend class="legend-txt">Sexo</legend>
+          <input type="radio" name="gender"> Feminino
+          <input type="radio" name="gender"> Masculino
+        </fieldset>
+      </div>
+      <fieldset>
+        <legend class="legend-txt">Identidade</legend>
+
+        <table>
+          <td>Número: <input type="number" name="cell-number"></td>
+          <td>Órgão Emissor: <input type="text" name="emission"></td>
+          <td>
+              UF: <select name="uf">
+              <option label=" "></option>
+              <option value="AC">AC
+              <option value="PR">PR
+              <option value="RJ">RJ
+            </select>
+          </td>
+
+          <td>Data: <input type="date" name="date"></td>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend class="legend-txt">Filiação</legend>
+        <table>
+
+          <td>Nome do Pai: <input type="text" name="fathers-name"></td>
+          <td>Nome da Mãe: <input type="text" name="mothers-name"></td>
+        </table>
+      </fieldset>
+    </fieldset>
+
+<!-- ENDEREÇO -->
+
+    <fieldset>
+      <legend class="legend-txt caps">Endereço</legend>
+      <fieldset>
+        <legend class="legend-txt">Endereço Profissional</legend>
+
+        <table>
+          <tr>
+            <td>
+              Logradouro: <select name="pro-public-place" selected value>
+                <option label=" "></option>
+                <option value="pro-rua">Rua</option>
+                <option value="pro-avenida">Avenida</option>
+                <option value="pro-praca">Praça</option>
+                <option value="pro-travessa">Travessa</option>
+                <option value="pro-alameda">Alameda</option>
+                <option value="pro-beco">Beco</option>
+                <option value="pro-passagem">Passagem</option>
+                <option value="pro-estrada">Estrada</option>
+            </select>
+            </td>
+
+            <td>Endereço: <input type="text" name="pro-address"></td>
+            <td>Bairro: <input type="text" name="pro-district"></td>
+
+            <td>
+              País: <select name="pro-country">
+                <option label=" "></option>
+                <option value="pro-brazil">Brasil
+              </select>
+            </td>
+            
+            <td>
+              UF: <select name="pro-uf">
+                <option label=" "></option>
+                <option value="pro-AC">AC
+                <option value="pro-PR">PR
+                <option value="pro-RJ">RJ
+              </select>
+            </td>
+
+            <td>Cidade: <input type="text" name="pro-city"></td>
+            <td>CEP: <input type="number" name="pro-cep"></td>
+          </tr>
+          <td>DDD: <input type="number" name="pro-ddd"></td>
+          <td>Fone: <input type="number" name="pro-fone"></td>
+          <td>Ramal: <input type="text" name="pro-ramal"></td>
+          <td>Fax: <input type="text" name="pro-fax"></td>
+          <td>Homepage Pessoal: <input type="text" name="pro-homepage"></td>
+          <td>E-mail: <input type="text" name="pro-email"></td>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend class="legend-txt">Endereço Residencial</legend>
+
+        <table>
+          <tr>
+            <td>
+              Logradouro: <select name="home-public-place" selected value>
+                <option label=" "></option>
+                <option value="home-rua">Rua</option>
+                <option value="home-avenida">Avenida</option>
+                <option value="home-praca">Praça</option>
+                <option value="home-travessa">Travessa</option>
+                <option value="home-alameda">Alameda</option>
+                <option value="home-beco">Beco</option>
+                <option value="home-passagem">Passagem</option>
+                <option value="home-estrada">Estrada</option>
+              </select>
+            </td>
+
+            <td>Endereço: <input type="text" name="home-address"></td>
+            <td>Bairro: <input type="text" name="home-district"></td>
+            <td>
+              País: <select name="home-country">
+                <option label=" "></option>
+                <option value="home-brazil">Brasil
+              </select>
+            </td>
+
+            <td>
+              UF: <select name="home-uf">
+                <option label=" "></option>
+                <option value="home-AC">AC
+                <option value="home-PR">PR
+                <option value="home-RJ">RJ
+              </select>
+            </td>
+
+            <td>Cidade: <input type="text" name="home-city"></td>
+            <td>CEP: <input type="number" name="home-cep"></td>
+          </tr>
+          <td>DDD: <input type="number" name="home-ddd"></td>
+          <td>Fone: <input type="number" name="home-fone"></td>
+          <td>Ramal: <input type="text" name="home-ramal"></td>
+          <td>Fax: <input type="text" name="home-fax"></td>
+          <td>Homepage Pessoal: <input type="text" name="home-homepage"></td>
+          <td>E-mail: <input type="text" name="home-email"></td>
+      </table>
+      </fieldset>
+
+      <fieldset>
+        <legend class="legend-txt">Endereço Preferencial Para Correspondência</legend>
+     
+        <input type="radio" name="addres-to-call"> Profissional
+        <input type="radio" name="addres-to-call"> Residencial
+      </fieldset>
+    </fieldset>
+
+    <fieldset>
+      <legend class="legend-txt caps">Formação Acadêmica</legend>
+      <fieldset>
+        <legend class="legend-txt">Formação</legend>
+        <table>
+          <td>
+            Nível: <select name="form-level" selected value>
+              <option label=" "></option>
+              <option value="form-graduacao">Graduação</option>
+              <option value="form-aperfeicoamento">Aperfeiçoamento</option>
+              <option value="form-especializacao">Especialização</option>
+              <option value="form-mestrado">Mestrado</option>
+              <option value="form-doutorado">Doutorado</option>      
+            </select>
+          </td>
+
+          <td>Carga Horária: <input type="number" name="form-hoursWork"></td>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-txt">Instituição/Curso</legend>
+
+        <table>
+          <td>Instituição: <input type="text" name="form-instituition"></td>
+          <td>Nome do Curso: <input type="text" name="form-courseName"></td>
+
+          <td>
+            Status do Curso: <select name="form-status">
+              <option label=" "></option>
+              <option value="form-inProgress">Em andamento</option>
+              <option value="form-concluede">Com título obtido</option>
+            </select>
+          </td>
+
+          <td>Período (ano): <input type="dat" name="form-time"></td>
+          <td>Título da Monografia: <input type="number" name="form-titleMono"></td>
+          <td>Nome do Orientador: <input type="number" name="form-fullNameTeacher"></td>
+          <td>
+            Bolsa: <select name="form-scholarship">
+              <option label=" "></option>
+              <option value="form-scholarshipYes">Sim</option>
+              <option value="form-scholarshipNo">Não</option>
+            </select>
+          </td>
+
+        <td>Entidade Financeira: <input type="number" name="form-financeIdentity"></td>
+        </table>
+      </fieldset>
+    </fieldset>
+
+    <fieldset>
+      <legend class="legend-txt caps">Atuação Profissional</legend>
+      <fieldset>
+        <legend class="legend-txt">Instituição de Trabalho</legend>
+        <table>
+          <td>Instituição: <input type="text" name="proArea-instituition"></td>
+          <td>Sigla: <input type="text" name="proArea-sigla"></td>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend class="legend-txt">Atividades Exercidas</legend>
+        <input type="checkbox" name="1" id="1"><label for="1">Conselhos, comissões e consultoria</label><br>
+        <input type="checkbox" name="2" id="2"><label for="2">Direção e administração</label><br>
+        <input type="checkbox" name="3" id="3"><label for="3">Ensino</label><br>
+        <input type="checkbox" name="4" id="4"><label for="4">Estágio</label><br>
+        <input type="checkbox" name="5" id="5"><label for="5">Extensão universitária</label><br>
+        <input type="checkbox" name="6" id="6"><label for="6">Pesquisa e desenvolvimento</label><br>
+        <input type="checkbox" name="7" id="7"><label for="7">Serviços técnicos e especializados</label><br>
+        <input type="checkbox" name="8" id="8"><label for="8">Treinamentos ministrados</label><br>
+        <input type="checkbox" name="9" id="9"><label for="9">Outras atividades técnico-científicas</label><br>
+      </fieldset>
+
+      <fieldset>
+      <legend class="legend-txt">Vínculo Institucional</legend>
+        <table>
+          <tr>
+            <td>Conselhos e consultoria<input type="text" name="proArea-conselhos"></td>
+            <td>Direção e administração: <input type="text" name="proArea-direction"></td>
+            <td>Ensino: <input type="text" name="proArea-school"></td>
+            <td>Estágio: <input type="text" name="proArea-estagio"></td>
+            <td>Extensão e universitária: <input type="text" name="proArea-extension"></td>
+            <td>Pesquisa e desenvolvimento: <input type="text" name="proArea-search"></td>
+            <td>Serviços técnicos: <input type="text" name="proArea-services"></td>
+          </tr>
+          <td>Treinamentos ministrados: <input type="text" name="proArea-training"></td>
+          <td>Outras atividades científicas: <input type="text" name="proArea-others"></td>
+
+          <td>
+            Período: <select name="proArea-period">
+              <option label=" "></option>
+
+              <option value="proArea-before">Anterior</option>
+              <option value="proArea-after">Atual</option>
+            </select>
+          </td>
+
+          <td>Início: <input type="date" name="proArea-begin"></td>
+          <td>Fim: <input type="date" name="proArea-end"></td>
+          
+          <td>
+            Tipos de Vínculo: <select name="proArea-vinculo">
+              <option label=" "></option>
+              <option value="proArea-vinc1">Servidor Público</option>
+              <option value="proArea-vinc2">Celetista</option>
+              <option value="proArea-vinc3">Outro</option>
+            </select>
+          </td>
+
+          <td>Carga Horária Semanal: <input type="number" name="proArea-hoursWork"></td>
+        </table>
+      </fieldset>
+    </fieldset>
+    <div class="btn-div">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
